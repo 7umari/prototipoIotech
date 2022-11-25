@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Design sem nome.png" />
     <None Remove="IoTech.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Design sem nome.png" />
     <Resource Include="IoTech.png" />
   </ItemGroup>
 

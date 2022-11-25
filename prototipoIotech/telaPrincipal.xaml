@@ -54,8 +54,8 @@
         <TextBlock HorizontalAlignment="Center" Margin="0,626,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,643,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,234,0,0" TextWrapping="Wrap" Text="Luzes da Casa" VerticalAlignment="Top" Height="48" Width="212" FontSize="36" Foreground="White" FontFamily="Dubai Medium"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,652,0,0" TextWrapping="Wrap" Text="Abrir Porta" VerticalAlignment="Top" Height="48" Width="176" FontSize="36" Foreground="White" FontFamily="Dubai Medium" RenderTransformOrigin="0.668,0.553"/>
-        <Image HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="114" Source="/Design sem nome.png" Stretch="Fill" StretchDirection="Both" Margin="55,31,0,0"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,652,0,0" TextWrapping="Wrap" Text="Abre-e-fecha Porta" VerticalAlignment="Top" Height="48" Width="314" FontSize="36" Foreground="White" FontFamily="Dubai Medium" RenderTransformOrigin="0.668,0.553" TextAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="90" Source="/Design sem nome.png" Stretch="Uniform" StretchDirection="Both" Margin="10,28,0,0"/>
 
     </Grid>
 </Window>
