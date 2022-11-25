@@ -10,9 +10,7 @@
     <Grid Background="#FF001F3D">
         <TextBlock HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638"/>
-        <TextBlock HorizontalAlignment="Left" Margin="72,666,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,683,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638"/>
-        <Button Content="LED 1" HorizontalAlignment="Left" Margin="125,368,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <Button Content="LED 1" HorizontalAlignment="Left" Margin="130,368,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,7 +20,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="LED 1" HorizontalAlignment="Left" Margin="294,458,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <Button Content="LED 2" HorizontalAlignment="Left" Margin="294,368,130,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -32,7 +30,8 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="LED 1" HorizontalAlignment="Left" Margin="125,458,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <TextBlock HorizontalAlignment="Left" Margin="939,497,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="222"/>
+        <Button Content="LED 1" HorizontalAlignment="Left" Margin="130,468,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -42,16 +41,21 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="LED 1" HorizontalAlignment="Left" Margin="294,367,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <Button Content="LED 2" HorizontalAlignment="Left" Margin="294,468,0,0" VerticalAlignment="Top" Height="64" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform/>
+                    <SkewTransform AngleY="-0.749"/>
                     <RotateTransform Angle="0.389"/>
-                    <TranslateTransform/>
+                    <TranslateTransform X="-0.005" Y="0.732"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+        <TextBlock HorizontalAlignment="Center" Margin="0,626,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,643,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,234,0,0" TextWrapping="Wrap" Text="Luzes da Casa" VerticalAlignment="Top" Height="48" Width="212" FontSize="36" Foreground="White" FontFamily="Dubai Medium"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,652,0,0" TextWrapping="Wrap" Text="Abrir Porta" VerticalAlignment="Top" Height="48" Width="176" FontSize="36" Foreground="White" FontFamily="Dubai Medium" RenderTransformOrigin="0.668,0.553"/>
+        <Image HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="114" Source="/Design sem nome.png" Stretch="Fill" StretchDirection="Both" Margin="55,31,0,0"/>
 
     </Grid>
 </Window>
