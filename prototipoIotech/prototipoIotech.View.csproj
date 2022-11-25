@@ -8,12 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Design sem nome.png" />
+    <None Remove="btnAbrirMenu.png" />
+    <None Remove="btnFecharMenu.png" />
+    <None Remove="btnProximaTela.png" />
+    <None Remove="imgLogo.png" />
     <None Remove="IoTech.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Design sem nome.png" />
+    <Resource Include="btnAbrirMenu.png" />
+    <Resource Include="btnFecharMenu.png" />
+    <Resource Include="btnProximaTela.png" />
+    <Resource Include="imgLogo.png" />
     <Resource Include="IoTech.png" />
   </ItemGroup>
 
