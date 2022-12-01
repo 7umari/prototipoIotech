@@ -11,6 +11,7 @@
     <None Remove="btnAbrirMenu.png" />
     <None Remove="btnFecharMenu.png" />
     <None Remove="btnProximaTela.png" />
+    <None Remove="btnVoltarTela.png" />
     <None Remove="imgLogo.png" />
     <None Remove="IoTech.png" />
   </ItemGroup>
@@ -19,6 +20,7 @@
     <Resource Include="btnAbrirMenu.png" />
     <Resource Include="btnFecharMenu.png" />
     <Resource Include="btnProximaTela.png" />
+    <Resource Include="btnVoltarTela.png" />
     <Resource Include="imgLogo.png" />
     <Resource Include="IoTech.png" />
   </ItemGroup>

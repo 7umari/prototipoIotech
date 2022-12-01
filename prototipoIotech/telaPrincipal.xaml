@@ -12,9 +12,9 @@
             <RowDefinition Height="140*"/>
             <RowDefinition Height="81*"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="objRetalguloLuzesDacasa2" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00"/>
-        <TextBlock x:Name="objRetalguloLuzesDacasa1" HorizontalAlignment="Center" Margin="0,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638"/>
-        <Button x:Name="btnLed1" Content="LED 1" HorizontalAlignment="Left" Margin="130,368,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <TextBlock x:Name="objRetalguloLuzesDacasa2" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00" Visibility="Visible"/>
+        <TextBlock x:Name="objRetalguloLuzesDacasa1" HorizontalAlignment="Center" Margin="0,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638" Visibility="Visible"/>
+        <Button x:Name="btnLed1" Content="LED 1" HorizontalAlignment="Left" Margin="130,368,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White" Visibility="Visible">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -24,7 +24,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btnLed2" Content="LED 2" HorizontalAlignment="Left" Margin="294,368,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <Button x:Name="btnLed2" Content="LED 2" HorizontalAlignment="Left" Margin="294,368,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White" Visibility="Visible">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,7 +35,7 @@
             </Button.RenderTransform>
         </Button>
         <TextBlock HorizontalAlignment="Left" Margin="939,497,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="222"/>
-        <Button x:Name="btnLed3" Content="LED 3" HorizontalAlignment="Left" Margin="130,468,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <Button x:Name="btnLed3" Content="LED 3" HorizontalAlignment="Left" Margin="130,468,0,0" VerticalAlignment="Top" Height="65" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White" Visibility="Visible">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -45,7 +45,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btnLed4" Content="LED 4" HorizontalAlignment="Left" Margin="294,468,0,0" VerticalAlignment="Top" Height="64" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White">
+        <Button x:Name="btnLed4" Content="LED 4" HorizontalAlignment="Left" Margin="294,468,0,0" VerticalAlignment="Top" Height="64" Width="112" RenderTransformOrigin="0.5,0.5" Background="#FFE87A00" FontSize="20" Foreground="White" Visibility="Visible">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -55,14 +55,24 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <TextBlock x:Name="objRetalguloPorta2" HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00" Grid.Row="1"/>
-        <TextBlock x:Name="objRetalguloPorta1" HorizontalAlignment="Center" Margin="0,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638" Grid.Row="1"/>
-        <TextBlock x:Name="txtLuzesCasa" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" Text="Luzes da Casa" VerticalAlignment="Top" Height="104" Width="378" FontSize="36" Foreground="White" FontFamily="Dubai Medium" Padding="78,22,9,0"/>
-        <TextBlock x:Name="btnAbrirPorta" HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" Text="Abre-e-fecha Porta" VerticalAlignment="Top" Height="104" Width="378" FontSize="36" Foreground="White" FontFamily="Dubai Medium" RenderTransformOrigin="0.668,0.553" TextAlignment="Center" Grid.Row="1" Padding="0,20,0,10"/>
-        <Image x:Name="btnAbrirMenu" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="90" Source="/btnAbrirMenu.png" Stretch="Uniform" StretchDirection="Both" Margin="10,28,0,0"/>
-        <Image x:Name="btnProximaTela" HorizontalAlignment="Center" Height="148" Margin="0,176,0,0" VerticalAlignment="Top" Width="148" Source="/btnProximaTela.png" Grid.Row="1"/>
+        <TextBlock x:Name="objRetalguloPorta2" HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00" Grid.Row="1" Visibility="Visible"/>
+        <TextBlock x:Name="objRetalguloPorta1" HorizontalAlignment="Center" Margin="0,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638" Grid.Row="1" Visibility="Visible"/>
+        <TextBlock x:Name="textLuzesCasa" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" Text="Luzes da Casa" VerticalAlignment="Top" Height="104" Width="378" FontSize="36" Foreground="White" FontFamily="Dubai Medium" Padding="78,22,9,0" Visibility="Visible"/>
+        <TextBlock x:Name="btnAbrirPorta" HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" Text="Abre-e-fecha Porta" VerticalAlignment="Top" Height="104" Width="378" FontSize="36" Foreground="White" FontFamily="Dubai Medium" RenderTransformOrigin="0.668,0.553" TextAlignment="Center" Grid.Row="1" Padding="0,20,0,10" Visibility="Visible"/>
+        <Image x:Name="btnAbrirMenu" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="90" Source="/btnAbrirMenu.png" Stretch="Uniform" StretchDirection="Both" Margin="10,28,0,0" MouseLeftButtonDown="AbrirMenu"/>
+        <Image x:Name="btnProximaTela" HorizontalAlignment="Center" Height="148" Margin="0,176,0,0" VerticalAlignment="Top" Width="148" Source="/btnProximaTela.png" Grid.Row="1" MouseLeftButtonDown="ProximaTela"/>
+        <TextBlock x:Name="objRetalguloSensor1" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00" Visibility="Hidden"/>
+        <TextBlock x:Name="objRetalguloSensor2" HorizontalAlignment="Center" Margin="0,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638" Visibility="Hidden"/>
+        <TextBlock x:Name="objRetalguloBuzzer1" HorizontalAlignment="Center" Margin="0,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="378" Background="#FFE87A00" Visibility="Hidden"/>
+        <TextBlock x:Name="objRetalguloBuzzer2" HorizontalAlignment="Center" Margin="0,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="314" Background="#FFF49638" Visibility="Hidden"/>
+        <TextBlock x:Name="btnSensor" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" Text="Sensor Infra-Vermelho" VerticalAlignment="Top" Height="104" Width="378" FontSize="32" Foreground="White" FontFamily="Dubai Medium" Padding="9,25,9,0" TextAlignment="Center" Visibility="Hidden"/>
+        <TextBlock x:Name="btnBuzzer" HorizontalAlignment="Center" Margin="0,390,0,0" TextWrapping="Wrap" Text="Buzzer" VerticalAlignment="Top" Height="104" Width="378" FontSize="36" Foreground="White" FontFamily="Dubai Medium" RenderTransformOrigin="0.668,0.553" TextAlignment="Center" Padding="0,20,0,10" Visibility="Hidden"/>
+        <TextBlock x:Name="objRetalguloLCD1" HorizontalAlignment="Center" Margin="0,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="378" Background="#FFE87A00" Visibility="Hidden" Grid.Row="1"/>
+        <TextBlock x:Name="objRetalguloLCD2" HorizontalAlignment="Center" Margin="0,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="314" Background="#FFF49638" Grid.Row="1" Visibility="Hidden"/>
+        <TextBlock x:Name="btnLCD" HorizontalAlignment="Center" Margin="0,27,0,0" TextWrapping="Wrap" Text="LCD" VerticalAlignment="Top" Height="88" Width="378" FontSize="36" Foreground="White" FontFamily="Dubai Medium" RenderTransformOrigin="0.668,0.553" TextAlignment="Center" Padding="0,13,0,10" Visibility="Hidden" Grid.Row="1"/>
+        <Image x:Name="btnVoltarTela" HorizontalAlignment="Center" Height="148" Margin="0,176,0,0" VerticalAlignment="Top" Width="148" Source="/btnVoltarTela.png" Grid.Row="1" Visibility="Hidden" MouseLeftButtonDown="VoltarTela"/>
         <Rectangle x:Name="objTelaMenu" HorizontalAlignment="Left" Height="884" Stroke="Black" VerticalAlignment="Top" Width="275" Fill="#FF001F3D" Grid.RowSpan="2" Visibility="Hidden"/>
-        <Image x:Name="btnVoltarMenu" HorizontalAlignment="Left" Height="61" Margin="12,38,0,0" VerticalAlignment="Top" Width="251" Source="/btnFecharMenu.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="btnVoltarMenu" HorizontalAlignment="Left" Height="61" Margin="12,38,0,0" VerticalAlignment="Top" Width="251" Source="/btnFecharMenu.png" Stretch="Fill" Visibility="Hidden" MouseLeftButtonDown="VoltarMenu"/>
         <TextBlock x:Name="btnConectarCasa" HorizontalAlignment="Left" Height="47" Margin="0,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Text="Conectar Casa" FontFamily="Dubai Medium" Foreground="White" FontSize="30" TextAlignment="Center" Background="#FFE87A00" Visibility="Hidden" Padding="2,0,0,0"/>
         <TextBlock x:Name="btnSairConta" HorizontalAlignment="Left" Height="45" Margin="0,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" FontFamily="Dubai Medium" Foreground="White" FontSize="30" TextAlignment="Center" Grid.Row="1" Background="#FFE87A00" Visibility="Hidden"><Run Language="pt-br" Text="Sair"/></TextBlock>
         <TextBlock x:Name="btnCriarUsuario" HorizontalAlignment="Left" Height="47" Margin="0,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Text="Criar Usuário" FontFamily="Dubai Medium" Foreground="White" FontSize="30" TextAlignment="Center" Background="#FFE87A00" Visibility="Hidden"/>
