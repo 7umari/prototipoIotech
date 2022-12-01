@@ -13,7 +13,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="88,415,0,0" TextWrapping="Wrap" Text="Usuário:" VerticalAlignment="Top" Height="36" Width="257" Foreground="White" FontSize="24" FontFamily="Dubai Medium"/>
         <TextBlock HorizontalAlignment="Left" Margin="88,526,0,0" TextWrapping="Wrap" Text="Senha:" VerticalAlignment="Top" Height="36" Width="257" Foreground="White" FontSize="24" FontFamily="Dubai Medium"/>
         <TextBlock HorizontalAlignment="Left" Margin="88,610,0,0" TextWrapping="Wrap" Text="Esqueceu a senha?" VerticalAlignment="Top" Height="26" Width="159" Foreground="White" FontSize="18" FontFamily="Dubai Medium"/>
-        <TextBlock HorizontalAlignment="Left" Margin="230,610,0,0" TextWrapping="Wrap" Text="Alterar a senha" VerticalAlignment="Top" Height="26" Width="160" Foreground="#FFE87A00" FontSize="18" FontFamily="Dubai Medium"/>
+        <TextBlock x:Name="btnContatarAdmin" HorizontalAlignment="Left" Margin="230,610,0,0" TextWrapping="Wrap" Text="Contatar Administrador" VerticalAlignment="Top" Height="26" Width="181" Foreground="#FFE87A00" FontSize="18" FontFamily="Dubai Medium" MouseLeftButtonDown="AlterarSenha"/>
         <Button Content="Entrar" HorizontalAlignment="Center" Margin="0,696,0,0" VerticalAlignment="Top" Height="72" Width="294" Background="#FFE87A00" BorderBrush="{x:Null}" Foreground="White" FontSize="30" FontFamily="Segoe UI Black"/>
     </Grid>
 </Window>

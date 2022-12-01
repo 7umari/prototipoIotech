@@ -23,5 +23,10 @@ namespace prototipoIotech.View
         {
             InitializeComponent();
         }
+
+        private void AlterarSenha(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Adiministrador contatado.", "Atenção!", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }
