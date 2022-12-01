@@ -16,7 +16,7 @@ public static class ConexaoBD
                 Server = "127.0.0.1",
                 UserID = "root",
                 Password = "",
-                Database = ""
+                Database = "iotech"
             };
         }
         private set { }

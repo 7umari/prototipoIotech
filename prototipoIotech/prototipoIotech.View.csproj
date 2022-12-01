@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\prototipoIotech.Model\prototipoIotech.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="btnAbrirMenu.png" />
     <Resource Include="btnFecharMenu.png" />
     <Resource Include="btnProximaTela.png" />
