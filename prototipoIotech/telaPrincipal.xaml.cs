@@ -60,6 +60,7 @@ namespace prototipoIotech.View
             btnSairConta.Visibility = Visibility.Visible;
             btnCriarUsuario.Visibility = Visibility.Visible;
             imgLogoSemTexto.Visibility = Visibility.Visible;
+            btnExcluirUsuario.Visibility = Visibility.Visible;
         }
 
         private void VoltarMenu(object sender, MouseButtonEventArgs e)
@@ -70,6 +71,7 @@ namespace prototipoIotech.View
             btnSairConta.Visibility = Visibility.Hidden;
             btnCriarUsuario.Visibility = Visibility.Hidden;
             imgLogoSemTexto.Visibility = Visibility.Hidden;
+            btnExcluirUsuario.Visibility= Visibility.Hidden;
         }
 
 
@@ -98,6 +100,34 @@ namespace prototipoIotech.View
             btnBuzzer.Visibility = Visibility.Hidden;
             btnLCD.Visibility = Visibility.Hidden;
             btnSensor.Visibility = Visibility.Hidden;
+        }
+
+        private void SairDaConta(object sender, MouseButtonEventArgs e)
+        {
+            var abrirTela = new telaLogin();
+            abrirTela.Show();
+            Close();
+        }
+
+        private void AbrirTelaConectarCasa(object sender, MouseButtonEventArgs e)
+        {
+            var abrirTela = new ConectarCasa();
+            abrirTela.Show();
+            Close();
+        }
+
+        private void AbrirCadastro(object sender, MouseButtonEventArgs e)
+        {
+            var abrirTela = new telaCadastroUsuario();
+            abrirTela.Show();
+            Close();
+        }
+
+        private void AbrirTelaExcluir(object sender, MouseButtonEventArgs e)
+        {
+            var abrirTela = new telaExcluirUsuario();
+            abrirTela.Show();
+            Close();
         }
     }
 }

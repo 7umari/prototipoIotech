@@ -1,0 +1,19 @@
+﻿<Window x:Class="prototipoIotech.View.ConectarCasa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prototipoIotech.View"
+        mc:Ignorable="d"
+        Title="ConectarCasa" Height="900" Width="550" Background="#FF001F3D">
+    <Grid>
+        <Rectangle x:Name="objRetanguloWifi1" HorizontalAlignment="Center" Height="250" Margin="0,497,0,0" VerticalAlignment="Top" Width="250" Fill="#FFE87A00"/>
+
+        <Image HorizontalAlignment="Center" Height="403" Margin="0,66,0,0" VerticalAlignment="Top" Width="412" Source="/IoTech.png"/>
+        <Rectangle x:Name="objRetanguloConectar2" HorizontalAlignment="Center" Height="190" Margin="0,527,0,0" VerticalAlignment="Top" Width="190" Fill="#FFF49638" RenderTransformOrigin="0.5,0.5"/>
+        <Image x:Name="imgWifi" HorizontalAlignment="Center" Height="136" Margin="0,569,0,0" VerticalAlignment="Top" Width="148" Source="/imgWifi.png"/>
+        <Rectangle x:Name="btnConectar" HorizontalAlignment="Center" Height="250" Margin="0,497,0,0" VerticalAlignment="Top" Width="250"/>
+        <Image x:Name="btnVoltarTela" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="250" Source="/btnVoltar.png" Stretch="Uniform" Visibility="Visible" MouseLeftButtonDown="VoltarTelaPrincipal" Margin="0,39,0,0"/>
+
+    </Grid>
+</Window>

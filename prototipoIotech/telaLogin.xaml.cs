@@ -28,5 +28,12 @@ namespace prototipoIotech.View
         {
             MessageBox.Show("Adiministrador contatado.", "Atenção!", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void EntrarNoApp(object sender, RoutedEventArgs e)
+        {
+            var abrirTela = new telaPrincipal();
+            abrirTela.Show();
+            Close();
+        }
     }
 }

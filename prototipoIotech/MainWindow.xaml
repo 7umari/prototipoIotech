@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="900" Width="550">
     <Grid Background="#FF001F3D">
-        <Image Source="/IoTech.png" Margin="48,219,48,219" Stretch="Fill"/>
+        <Image x:Name="imgLogo" Source="/IoTech.png" Margin="48,219,48,219" Stretch="Fill"/>
 
     </Grid>
 </Window>

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace prototipoIotech.View
 {
     /// <summary>
-    /// Lógica interna para telaCadastroUsuario.xaml
+    /// Lógica interna para ConectarCasa.xaml
     /// </summary>
-    public partial class telaCadastroUsuario : Window
+    public partial class ConectarCasa : Window
     {
-        public telaCadastroUsuario()
+        public ConectarCasa()
         {
             InitializeComponent();
         }

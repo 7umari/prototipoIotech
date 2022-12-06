@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="telaLogin" Height="900" Width="550">
     <Grid Background="#FF001F3D">
-        <Image HorizontalAlignment="Left" Height="374" Margin="88,55,0,0" VerticalAlignment="Top" Width="400" Source="/IoTech.png"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="38"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,567,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="38"/>
-        <TextBlock HorizontalAlignment="Left" Margin="88,415,0,0" TextWrapping="Wrap" Text="Usuário:" VerticalAlignment="Top" Height="36" Width="257" Foreground="White" FontSize="24" FontFamily="Dubai Medium"/>
-        <TextBlock HorizontalAlignment="Left" Margin="88,526,0,0" TextWrapping="Wrap" Text="Senha:" VerticalAlignment="Top" Height="36" Width="257" Foreground="White" FontSize="24" FontFamily="Dubai Medium"/>
+        <Image x:Name="imgLogoLogin" HorizontalAlignment="Left" Height="374" Margin="88,55,0,0" VerticalAlignment="Top" Width="400" Source="/IoTech.png"/>
+        <TextBox x:Name="textBoxUsuarioLogin" HorizontalAlignment="Center" Margin="0,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="38"/>
+        <TextBox x:Name="textBoxSenhaLogin" HorizontalAlignment="Center" Margin="0,567,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="38"/>
+        <TextBlock x:Name="txtUsuario" HorizontalAlignment="Left" Margin="88,415,0,0" TextWrapping="Wrap" Text="Usuário:" VerticalAlignment="Top" Height="36" Width="257" Foreground="White" FontSize="24" FontFamily="Dubai Medium"/>
+        <TextBlock x:Name="txtSenha" HorizontalAlignment="Left" Margin="88,526,0,0" TextWrapping="Wrap" Text="Senha:" VerticalAlignment="Top" Height="36" Width="257" Foreground="White" FontSize="24" FontFamily="Dubai Medium"/>
         <TextBlock HorizontalAlignment="Left" Margin="88,610,0,0" TextWrapping="Wrap" Text="Esqueceu a senha?" VerticalAlignment="Top" Height="26" Width="159" Foreground="White" FontSize="18" FontFamily="Dubai Medium"/>
         <TextBlock x:Name="btnContatarAdmin" HorizontalAlignment="Left" Margin="230,610,0,0" TextWrapping="Wrap" Text="Contatar Administrador" VerticalAlignment="Top" Height="26" Width="181" Foreground="#FFE87A00" FontSize="18" FontFamily="Dubai Medium" MouseLeftButtonDown="AlterarSenha"/>
-        <Button Content="Entrar" HorizontalAlignment="Center" Margin="0,696,0,0" VerticalAlignment="Top" Height="72" Width="294" Background="#FFE87A00" BorderBrush="{x:Null}" Foreground="White" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Center" Margin="0,696,0,0" VerticalAlignment="Top" Height="72" Width="294" Background="#FFE87A00" BorderBrush="{x:Null}" Foreground="White" FontSize="30" FontFamily="Segoe UI Black" Click="EntrarNoApp"/>
     </Grid>
 </Window>
