@@ -26,7 +26,10 @@ namespace prototipoIotech.View
 
         private void AlterarSenha(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Adiministrador contatado.", "Atenção!", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Adiministrador contatado.",
+                            "Atenção!",
+                            MessageBoxButton.OK,
+                            MessageBoxImage.Information);
         }
 
         private void EntrarNoApp(object sender, RoutedEventArgs e)
@@ -35,5 +38,32 @@ namespace prototipoIotech.View
             abrirTela.Show();
             Close();
         }
+
+        private void CadastrarUsuario()
+        {
+            AdicionaUsuario()
+
+
+
+
+        }
+
+        private bool AdicionaUsuario()
+        {
+            bool foiCadastrado = ConsultasUsuario.CadastrarUsuario(
+                textBoxUsuarioLogin.Text,
+                textBoxSenhaLogin.Text
+                );
+            if (foiCadastrado == true)
+            {
+                MessageBox.Show("Usuário cadastrado!",
+                                "Atenção!",
+                                MessageBoxButton.OK, 
+                                MessageBoxImage.Information);
+            }
+        
+        }
+
+        private bool VerificaCampos
     }
 }

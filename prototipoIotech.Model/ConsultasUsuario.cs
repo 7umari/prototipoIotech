@@ -12,6 +12,7 @@ public class ConsultasUsuario
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool usuarioCadastrado = false;
+        string senhaCriptografada = Criptografia.CriptografarMD5(senha);
 
         try
         {
@@ -21,7 +22,7 @@ public class ConsultasUsuario
                                     VALUES (@usuario,@email,@senha,@tipoUsuario)";
             comando.Parameters.AddWithValue("@nome", usuario);
             comando.Parameters.AddWithValue("@email", email);
-            comando.Parameters.AddWithValue("@senha", senha);
+            comando.Parameters.AddWithValue("@senha", senhaCriptografada);
             comando.Parameters.AddWithValue("@tipoUsuario", tipoUsuario);
             var leitura = comando.ExecuteReader();
             usuarioCadastrado = true;
@@ -69,6 +70,42 @@ public class ConsultasUsuario
         }
 
         return usuarioExcluido;
+    }
+
+    public static bool AlterarUsuario(string usuario, string email, string senha, bool tipoUsuario)
+    {
+        var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+        bool usuarioAlterado = false;
+
+        try
+        {
+            conexao.Open();
+            var comando = conexao.CreateCommand();
+            comando.CommandText = @"
+                        UPDATE Usuario
+                        SET nome = @usuario, email = @email, senha = @senha, tipoUsuario = @tipoUsuario
+                        WHERE id = @id";
+            comando.Parameters.AddWithValue("@nome", usuario);
+            comando.Parameters.AddWithValue("@email", email);
+            comando.Parameters.AddWithValue("@senha", senha);
+            comando.Parameters.AddWithValue("@tipoUsuario", tipoUsuario);
+            var leitura = comando.ExecuteReader();
+            usuarioAlterado = true;
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            if (conexao.State == System.Data.ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+
+        return usuarioAlterado;
     }
 }
 
