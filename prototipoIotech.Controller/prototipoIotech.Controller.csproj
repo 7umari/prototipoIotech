@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\prototipoIotech.Model\prototipoIotech.Model.csproj" />
+  </ItemGroup>
+
 </Project>

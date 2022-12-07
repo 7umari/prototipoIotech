@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\prototipoIotech.Controller\prototipoIotech.Controller.csproj" />
     <ProjectReference Include="..\prototipoIotech.Model\prototipoIotech.Model.csproj" />
   </ItemGroup>
 

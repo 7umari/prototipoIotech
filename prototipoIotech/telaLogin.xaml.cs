@@ -24,6 +24,8 @@ namespace prototipoIotech.View
             InitializeComponent();
         }
 
+
+
         private void AlterarSenha(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("Adiministrador contatado.",
@@ -34,36 +36,56 @@ namespace prototipoIotech.View
 
         private void EntrarNoApp(object sender, RoutedEventArgs e)
         {
-            var abrirTela = new telaPrincipal();
-            abrirTela.Show();
-            Close();
-        }
-
-        private void CadastrarUsuario()
-        {
-            AdicionaUsuario()
-
-
-
-
-        }
-
-        private bool AdicionaUsuario()
-        {
-            bool foiCadastrado = ConsultasUsuario.CadastrarUsuario(
-                textBoxUsuarioLogin.Text,
-                textBoxSenhaLogin.Text
-                );
-            if (foiCadastrado == true)
+            FazerLogin(textBoxUsuarioLogin.Text, passwordSenhaLogin.Password);
+            
+            if(VerificaCampos() == false) 
             {
-                MessageBox.Show("Usuário cadastrado!",
-                                "Atenção!",
-                                MessageBoxButton.OK, 
-                                MessageBoxImage.Information);
+                MessageBoxResult result = MessageBox.Show(
+                        "Preencha todos os campos!",
+                        "Atenção",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Warning);
+            }
+        }
+        private void FazerLogin(string email, string senha)
+        {
+            if (VerificaCampos() == true)
+            {
+
+                Usuario usuario = cUsuario.ObterUsuarioPeloEmailSenha(email, senha);
+                if (usuario != null)
+                {
+                    var frmTelaPrincipal = new telaPrincipal();
+                    frmTelaPrincipal.Show();
+                    Close();
+                }
+
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show(
+                        "Usuário ou senha incorretos!",
+                        "Atenção",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Warning);
+                }
+
+            }
+        }
+
+
+        private bool VerificaCampos()
+        {
+            if (textBoxUsuarioLogin.Text != "" && passwordSenhaLogin.Password != "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         
         }
 
-        private bool VerificaCampos
+
     }
 }
