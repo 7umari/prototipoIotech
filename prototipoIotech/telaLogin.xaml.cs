@@ -47,12 +47,12 @@ namespace prototipoIotech.View
                         MessageBoxImage.Warning);
             }
         }
-        private void FazerLogin(string email, string senha)
+        private void FazerLogin(string nome, string senha)
         {
             if (VerificaCampos() == true)
             {
 
-                Usuario usuario = cUsuario.ObterUsuarioPeloEmailSenha(email, senha);
+                Usuario usuario = cUsuario.ObterUsuarioPeloNomeSenha(nome, senha);
                 if (usuario != null)
                 {
                     var frmTelaPrincipal = new telaPrincipal();

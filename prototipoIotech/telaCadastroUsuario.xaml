@@ -17,13 +17,8 @@
         <TextBox x:Name="txtBoxSenha" HorizontalAlignment="Center" Margin="0,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="38"/>
         <TextBox x:Name="txtBoxConfirmarSenha" HorizontalAlignment="Center" Margin="0,572,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="38"/>
         <TextBox x:Name="txtBoxEmail" HorizontalAlignment="Center" Margin="0,404,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Height="38"/>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,702,0,0" VerticalAlignment="Top" Height="72" Width="294" Background="#FFE87A00" BorderBrush="{x:Null}" Foreground="White" FontSize="30" FontFamily="Segoe UI Black"/>
-        <ComboBox x:Name="comboBoxTipoUsuario" HorizontalAlignment="Left" Margin="275,630,0,0" VerticalAlignment="Top" Width="164" BorderBrush="White" Background="White" FontSize="14" Height="23">
-            <ComboBoxItem Background="White" Content="Administrador"/>
-            <ComboBoxItem Background="White" Content="Usuário"/>
-        </ComboBox>
-        <TextBlock x:Name="txtTipoUsuario" HorizontalAlignment="Left" Margin="88,621,0,0" TextWrapping="Wrap" Text="Tipo de Usuário:" VerticalAlignment="Top" Foreground="White" FontFamily="Dubai Medium" FontSize="24"/>
-        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Center" Margin="0,784,0,0" VerticalAlignment="Top" Height="72" Width="294" Background="#FFE87A00" BorderBrush="{x:Null}" Foreground="White" FontSize="30" FontFamily="Segoe UI Black"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,702,0,0" VerticalAlignment="Top" Height="72" Width="294" Background="#FFE87A00" BorderBrush="{x:Null}" Foreground="White" FontSize="30" FontFamily="Segoe UI Black" MouseLeftButtonDown="CadastrarUsuario"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Center" Margin="0,784,0,0" VerticalAlignment="Top" Height="72" Width="294" Background="#FFE87A00" BorderBrush="{x:Null}" Foreground="White" FontSize="30" FontFamily="Segoe UI Black" MouseLeftButtonDown="AlterarUsuario"/>
         <Image x:Name="btnVoltarTela" HorizontalAlignment="Left" Height="82" VerticalAlignment="Top" Width="236" Source="/btnVoltar.png" Stretch="Uniform" Visibility="Visible" MouseLeftButtonDown="VoltarTelaPrincipal" Margin="0,23,0,0"/>
 
     </Grid>

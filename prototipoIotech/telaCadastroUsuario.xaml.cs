@@ -30,5 +30,50 @@ namespace prototipoIotech.View
             abrirTela.Show();
             Close();
         }
+
+        private void CadastrarUsuario(object sender, MouseButtonEventArgs e)
+        {
+            if (VerificaCampos() == true)
+            {
+
+                Usuario usuario = cUsuario.NovoUsuario(txtBoxUsuario.Text, txtBoxEmail.Text, txtBoxSenha.Text);
+                if (usuario != false)
+                {
+                    MessageBoxResult result = MessageBox.Show(
+                      "Usuário cadastrado com sucesso!",
+                      "Atenção",
+                      MessageBoxButton.OK,
+                      MessageBoxImage.Information);
+                }
+
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show(
+                        "Usuário ou senha incorretos!",
+                        "Atenção",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Warning);
+                }
+
+            }
+        }
+
+        private void AlterarUsuario(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private bool VerificaCampos()
+        {
+            if (txtBoxUsuario.Text != "" && txtBoxEmail.Text != "" && txtBoxSenha.Text != "" && txtBoxConfirmarSenha.Text != "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }

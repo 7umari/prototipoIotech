@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 public class cUsuario
 {
-    public static bool VerificarUsuarioExistente(string email)
+    public static bool VerificarUsuarioExistente(string nome)
     {
-        return ConsultasUsuario.VerificarUsuarioExistente(email);
+        return ConsultasUsuario.VerificarUsuarioExistente(nome);
     }
 
-    public static bool NovoUsuario(string usuario, string email, string senha, bool tipoUsuario)
+    public static bool NovoUsuario(string nome, string email, string senha)
     {
-        return ConsultasUsuario.CadastrarUsuario(usuario, email, senha, tipoUsuario);
+        return ConsultasUsuario.CadastrarUsuario(nome, email, senha);
     }
 
-    public static Usuario ObterUsuarioPeloEmailSenha(string email, string senha)
+    public static Usuario ObterUsuarioPeloNomeSenha(string nome, string senha)
     {
-        return ConsultasUsuario.ObterUsuarioPeloEmailSenha(email, senha);
+        return ConsultasUsuario.ObterUsuarioPeloNomeSenha(nome, senha);
     }
 }
